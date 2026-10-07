@@ -6,41 +6,43 @@
 
 .background-style {
     width: 100%;
-    min-height: 100vh; /* min-height é melhor para o celular não cortar o fundo */
+    min-height: 100vh;
+    /* min-height é melhor para o celular não cortar o fundo */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #container {
     display: flex;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 100vh;  
+    min-height: 100vh;
 }
 
 .hoursStyle {
     display: flex;
-    flex-direction: column;    
-    align-items: center;      
-    justify-content: space-between; 
-    width: 90%; 
-    max-width: 520px; /* Limita o tamanho no PC para ficar igual ao seu 30% original */       
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 520px;
     height: 75vh;
     max-height: 700px;
-    
+
     /* SEU ESTILO ORIGINAL MANTIDO */
     background-color: rgba(240, 248, 255, 0.493);
     border-radius: 50px;
     border: 1px solid #ffff;
-    padding: 30px 20px;        
+    padding: 30px 20px;
 }
 
 .menu-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* RESPONSIVIDADE: Faz os botões pularem de linha em telas finas ao invés de espremer */
+    flex-wrap: wrap;
+    /* RESPONSIVIDADE: Faz os botões pularem de linha em telas finas ao invés de espremer */
     gap: 8px;
     width: 100%;
 }
@@ -61,18 +63,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
     /* RESPONSIVIDADE: Substitui o 350px fixo, mantendo como um círculo perfeito */
     width: 100%;
     max-width: 350px;
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
 
 .catsGif {
     display: flex;
-    justify-content: center;   
-    align-items: center;       
+    justify-content: center;
+    align-items: center;
     height: 190px;
     width: 50%;
 }
@@ -82,6 +84,17 @@
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
+}
+
+
+
+.buttons-stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
 }
 
 /* --- MEDIA QUERIES PARA ADAPTAR NO CELULAR --- */
@@ -100,7 +113,7 @@
 
     .clock-static {
         /* Se você mantiver o style="font-size: 4rem" no HTML, isso aqui força a fonte a diminuir no celular para não quebrar a tela */
-        font-size: 2.5rem !important; 
+        font-size: 2.5rem !important;
     }
 
     .catsGif {
@@ -117,7 +130,7 @@
         padding: 6px 10px;
         font-size: 0.75rem;
     }
-    
+
     .clock-static {
         font-size: 2rem !important;
     }
