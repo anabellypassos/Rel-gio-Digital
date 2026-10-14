@@ -13,10 +13,10 @@
 
         <div class="hoursStyle">
             <div class="menu-button">
-                <button class="buttons-menu" id="button1" >Relógio</button>
+                <button class="buttons-menu" id="button1" onclick="updateClock()">Relógio</button>
                 <button class="buttons-menu" id="button2" onclick="stopwatch()">Cronômetro</button>
-                <button class="buttons-menu" id="button3">Temporizador</button>
-                <button class="buttons-menu" id="button4">Alarme</button>
+                <button class="buttons-menu" id="button3" onclick="markerTime()">Temporizador</button>
+                <button class="buttons-menu" id="button4" onclick="alarme()">Alarme</button>
             </div>
             <div id="clock" style="font-size: 4rem; font-family: monospace; font-weight: bold; color: rgb(78, 2, 49);"
                 class="clock-static">
@@ -25,10 +25,17 @@
 
             </div>
             <div class="buttons-stopwatch">
-             <div id="start"></div>
-              <div id="stop"></div>
-              <div id="reset"></div>
-              </div>
+                <div id="start" onclick="player()"></div>
+                <div id="stop"></div>
+                <div id="reset"></div>
+            </div>
+
+            <div class="buttons-markerTime">
+                <div id="editTimeinput"></div>
+                <div id="editTime" onclick="edit()"></div>
+                <div id="resetTime"></div>
+                <div id="startTime"></div>
+            </div>
             <img id="catsGif" class="catsGif" src="" alt="Gato animado">
 
         </div>
@@ -40,7 +47,8 @@
     </div>
 
     <script src="./js/functionRelogio.js"></script>
-     <script src="./js/cronometro.js"></script>
+    <script src="./js/cronometro.js"></script>
+    <script src="./js/temporizador.js"></script>
 </body>
 
 </html>

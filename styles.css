@@ -97,6 +97,15 @@
     width: 100%;
 }
 
+.buttons-markerTime{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+}
+
 /* --- MEDIA QUERIES PARA ADAPTAR NO CELULAR --- */
 
 @media (max-width: 480px) {
