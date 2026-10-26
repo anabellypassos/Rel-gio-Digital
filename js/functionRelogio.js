@@ -2,7 +2,8 @@
 window.modoAtual = 'relogio';
 
 function updateClock(){
-    window.modoAtual = 'relogio'; // Avisa ao sistema que estamos no relógio
+    window.modoAtual = 'relogio'; 
+ if (typeof cancelarEdicao === 'function') cancelarEdicao();
 
     const startButton = document.getElementById('start');
     const stopButton = document.getElementById('stop');

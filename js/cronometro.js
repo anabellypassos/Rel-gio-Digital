@@ -48,6 +48,7 @@ function zerarCronometro() {
 // Função executada ao clicar no botão "Cronômetro" do menu
 function stopwatch() {
     window.modoAtual = 'cronometro'; // Avisa ao sistema que estamos no cronômetro
+     if (typeof cancelarEdicao === 'function') cancelarEdicao();
 
     clearInterval(window.intervaloRelogio); // Para o relógio de tomar conta do painel
 
